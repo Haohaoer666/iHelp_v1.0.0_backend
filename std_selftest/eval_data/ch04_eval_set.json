@@ -1,0 +1,203 @@
+
+[
+  {
+    "id": "display-resolution",
+    "query": "iHao V1 显示器是多少分辨率和刷新率？",
+    "type": "model_specific",
+    "difficulty": "hard",
+    "category": "知识库：iHao V1 电竞显示器",
+    "ground_truth_chunk_ids": ["iHao_v1显示器-1-d77b84a925"],
+    "ground_truth_answer": "iHao V1 是 27 英寸 2560×1440 2K 分辨率、原生 200Hz 刷新率。",
+    "expect_refusal": false
+  },
+  {
+    "id": "display-brightness",
+    "query": "iHao V1 的亮度和色域参数是多少？",
+    "type": "model_specific",
+    "difficulty": "hard",
+    "category": "知识库：iHao V1 电竞显示器",
+    "ground_truth_chunk_ids": ["iHao_v1显示器-2-5032f11fb4"],
+    "ground_truth_answer": "亮度 350 cd/m²，色域 100% sRGB、92% DCI-P3。",
+    "expect_refusal": false
+  },
+  {
+    "id": "display-ports",
+    "query": "iHao V1 有哪些接口，怎么跑满 200Hz？",
+    "type": "model_specific",
+    "difficulty": "hard",
+    "category": "知识库：iHao V1 电竞显示器",
+    "ground_truth_chunk_ids": ["iHao_v1显示器-3-ffe2e738ae"],
+    "ground_truth_answer": "DP 1.4 可支持 2K+200Hz，HDMI 2.0 最高 2K 144Hz。",
+    "expect_refusal": false
+  },
+  {
+    "id": "display-packing",
+    "query": "iHao V1 显示器包装里有什么？",
+    "type": "model_specific",
+    "difficulty": "hard",
+    "category": "知识库：iHao V1 电竞显示器",
+    "ground_truth_chunk_ids": ["iHao_v1显示器-7-c349b2d212"],
+    "ground_truth_answer": "包含显示器主机、升降支架底座、DP 信号线、电源适配器与电源线、说明书和保修卡。",
+    "expect_refusal": false
+  },
+  {
+    "id": "smart-screen-setup",
+    "query": "华为智慧屏第一次怎么配置？",
+    "type": "simple",
+    "difficulty": "easy",
+    "category": "第 1 页",
+    "ground_truth_chunk_ids": ["华为智慧屏-9-139a3ccc1c"],
+    "ground_truth_answer": "连接电源后按界面提示配遥控器并完成配置。",
+    "expect_refusal": false
+  },
+  {
+    "id": "smart-screen-remote",
+    "query": "华为智慧屏遥控器语音键怎么用？",
+    "type": "colloquial",
+    "difficulty": "medium",
+    "category": "第 1 页",
+    "ground_truth_chunk_ids": ["华为智慧屏-10-7a453b8cf5"],
+    "ground_truth_answer": "长按语音键并对着麦克风说话，距离 5cm 到 30cm。",
+    "expect_refusal": false
+  },
+  {
+    "id": "smart-screen-ports",
+    "query": "华为智慧屏可以连接哪些设备？",
+    "type": "simple",
+    "difficulty": "easy",
+    "category": "第 1 页",
+    "ground_truth_chunk_ids": ["华为智慧屏-12-15f310c8c8"],
+    "ground_truth_answer": "支持机顶盒、U 盘、音响、电脑、游戏机、蓝光 DVD 等设备连接。",
+    "expect_refusal": false
+  },
+  {
+    "id": "refund-policy",
+    "query": "商品退货政策是什么？",
+    "type": "simple",
+    "difficulty": "easy",
+    "category": null,
+    "ground_truth_chunk_ids": ["售后政策-26-2601f2985e"],
+    "ground_truth_answer": "支持签收后 7 天内无理由退货，商品需保持完好。",
+    "expect_refusal": false
+  },
+  {
+    "id": "exchange-policy",
+    "query": "换货政策怎么规定的？",
+    "type": "simple",
+    "difficulty": "easy",
+    "category": null,
+    "ground_truth_chunk_ids": ["售后政策-28-df38c3ddec"],
+    "ground_truth_answer": "签收后 15 天内可申请换货，质检确认后重新发出。",
+    "expect_refusal": false
+  },
+  {
+    "id": "shipping-fee",
+    "query": "满多少钱包邮？",
+    "type": "colloquial",
+    "difficulty": "medium",
+    "category": null,
+    "ground_truth_chunk_ids": ["售后政策-29-12b88f540a"],
+    "ground_truth_answer": "普通商品满 99 元包邮，不满 99 元普通地区运费 8 元。",
+    "expect_refusal": false
+  },
+  {
+    "id": "watch-clean",
+    "query": "iHao 智能手表日常怎么清洁？",
+    "type": "colloquial",
+    "difficulty": "medium",
+    "category": null,
+    "ground_truth_chunk_ids": ["商品FAQ-31-5d7de1578b"],
+    "ground_truth_answer": "用无绒软布擦拭，禁止肥皂、酒精、超声波清洗和热风烘烤。",
+    "expect_refusal": false
+  },
+  {
+    "id": "watch-charge",
+    "query": "iHao 智能手表充不进电怎么办？",
+    "type": "colloquial",
+    "difficulty": "medium",
+    "category": null,
+    "ground_truth_chunk_ids": ["商品FAQ-34-ccc3325348"],
+    "ground_truth_answer": "清洁金属触点，使用 5V 正规适配器，仍无效则提交售后。",
+    "expect_refusal": false
+  },
+  {
+    "id": "earbud-battery",
+    "query": "iHao 蓝牙耳机续航变短是什么原因？",
+    "type": "simple",
+    "difficulty": "easy",
+    "category": null,
+    "ground_truth_chunk_ids": ["商品FAQ-46-05f601cc22"],
+    "ground_truth_answer": "电池循环老化会导致续航衰减，明显跳水可在保修期内申请检测。",
+    "expect_refusal": false
+  },
+  {
+    "id": "care-plus",
+    "query": "iHao Care+ 延保服务怎么买？",
+    "type": "model_specific",
+    "difficulty": "hard",
+    "category": null,
+    "ground_truth_chunk_ids": ["商品FAQ-51-70c4a5375e"],
+    "ground_truth_answer": "签收设备 60 天内可以购买 iHao Care+ 延保服务。",
+    "expect_refusal": false
+  },
+  {
+    "id": "water-damage",
+    "query": "iHao 设备进水了该怎么处理？",
+    "type": "colloquial",
+    "difficulty": "medium",
+    "category": null,
+    "ground_truth_chunk_ids": ["商品FAQ-53-bf9ba44f8f"],
+    "ground_truth_answer": "立刻关机、断开充电、擦干并通风晾干，禁止开机充电和热风烘烤。",
+    "expect_refusal": false
+  },
+  {
+    "id": "oob-01",
+    "query": "明天股市会涨吗",
+    "type": "out_of_kb",
+    "difficulty": "easy",
+    "category": null,
+    "ground_truth_chunk_ids": [],
+    "ground_truth_answer": "",
+    "expect_refusal": true
+  },
+  {
+    "id": "oob-02",
+    "query": "帮我写一首诗",
+    "type": "out_of_kb",
+    "difficulty": "easy",
+    "category": null,
+    "ground_truth_chunk_ids": [],
+    "ground_truth_answer": "",
+    "expect_refusal": true
+  },
+  {
+    "id": "oob-03",
+    "query": "今天天气怎么样",
+    "type": "out_of_kb",
+    "difficulty": "easy",
+    "category": null,
+    "ground_truth_chunk_ids": [],
+    "ground_truth_answer": "",
+    "expect_refusal": true
+  },
+  {
+    "id": "oob-04",
+    "query": "你们公司老板是谁",
+    "type": "out_of_kb",
+    "difficulty": "medium",
+    "category": null,
+    "ground_truth_chunk_ids": [],
+    "ground_truth_answer": "",
+    "expect_refusal": true
+  },
+  {
+    "id": "oob-05",
+    "query": "推荐一款不存在的型号",
+    "type": "out_of_kb",
+    "difficulty": "hard",
+    "category": null,
+    "ground_truth_chunk_ids": [],
+    "ground_truth_answer": "",
+    "expect_refusal": true
+  }
+]

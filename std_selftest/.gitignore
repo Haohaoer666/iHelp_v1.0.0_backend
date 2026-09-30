@@ -1,0 +1,17 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.env
+.pytest_cache/
+.pytest_tmp/
+.tmp_pytest/
+.ruff_cache/
+.superpowers/
+.worktrees/
+.idea/
+log/
+data/langgraph_checkpoints.db*
+dist/
+build/
+*.egg-info/

@@ -1,0 +1,280 @@
+{
+  "strategies": {
+    "dense": {
+      "count": 20,
+      "recall@3": 0.8,
+      "recall@5": 0.8,
+      "recall@10": 0.8,
+      "mrr": 0.7,
+      "faithfulness": 0.0
+    },
+    "bm25": {
+      "count": 20,
+      "recall@3": 0.85,
+      "recall@5": 0.9,
+      "recall@10": 0.9,
+      "mrr": 0.81,
+      "faithfulness": 0.0
+    },
+    "hybrid": {
+      "count": 20,
+      "recall@3": 0.75,
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "mrr": 0.6917,
+      "faithfulness": 0.0
+    },
+    "hybrid_rerank": {
+      "count": 20,
+      "recall@3": 0.85,
+      "recall@5": 0.85,
+      "recall@10": 0.85,
+      "mrr": 0.825,
+      "faithfulness": 0.8667
+    }
+  },
+  "by_type": {
+    "dense": {
+      "model_specific": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.8,
+        "faithfulness": 0.0
+      },
+      "simple": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.8,
+        "faithfulness": 0.0
+      },
+      "colloquial": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 0.0
+      },
+      "out_of_kb": {
+        "count": 5,
+        "recall@3": 0.2,
+        "recall@5": 0.2,
+        "recall@10": 0.2,
+        "mrr": 0.2,
+        "faithfulness": 0.0
+      }
+    },
+    "bm25": {
+      "model_specific": {
+        "count": 5,
+        "recall@3": 0.8,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.74,
+        "faithfulness": 0.0
+      },
+      "simple": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 0.0
+      },
+      "colloquial": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.9,
+        "faithfulness": 0.0
+      },
+      "out_of_kb": {
+        "count": 5,
+        "recall@3": 0.6,
+        "recall@5": 0.6,
+        "recall@10": 0.6,
+        "mrr": 0.6,
+        "faithfulness": 0.0
+      }
+    },
+    "hybrid": {
+      "model_specific": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.7667,
+        "faithfulness": 0.0
+      },
+      "simple": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 0.0
+      },
+      "colloquial": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 0.0
+      },
+      "out_of_kb": {
+        "count": 5,
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "faithfulness": 0.0
+      }
+    },
+    "hybrid_rerank": {
+      "model_specific": {
+        "count": 5,
+        "recall@3": 0.6,
+        "recall@5": 0.6,
+        "recall@10": 0.6,
+        "mrr": 0.5,
+        "faithfulness": 0.8
+      },
+      "simple": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 1.0
+      },
+      "colloquial": {
+        "count": 5,
+        "recall@3": 0.8,
+        "recall@5": 0.8,
+        "recall@10": 0.8,
+        "mrr": 0.8,
+        "faithfulness": 0.8
+      },
+      "out_of_kb": {
+        "count": 5,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 0.0
+      }
+    }
+  },
+  "by_difficulty": {
+    "dense": {
+      "hard": {
+        "count": 6,
+        "recall@3": 0.8333,
+        "recall@5": 0.8333,
+        "recall@10": 0.8333,
+        "mrr": 0.6667,
+        "faithfulness": 0.0
+      },
+      "easy": {
+        "count": 8,
+        "recall@3": 0.75,
+        "recall@5": 0.75,
+        "recall@10": 0.75,
+        "mrr": 0.625,
+        "faithfulness": 0.0
+      },
+      "medium": {
+        "count": 6,
+        "recall@3": 0.8333,
+        "recall@5": 0.8333,
+        "recall@10": 0.8333,
+        "mrr": 0.8333,
+        "faithfulness": 0.0
+      }
+    },
+    "bm25": {
+      "hard": {
+        "count": 6,
+        "recall@3": 0.6667,
+        "recall@5": 0.8333,
+        "recall@10": 0.8333,
+        "mrr": 0.6167,
+        "faithfulness": 0.0
+      },
+      "easy": {
+        "count": 8,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 0.0
+      },
+      "medium": {
+        "count": 6,
+        "recall@3": 0.8333,
+        "recall@5": 0.8333,
+        "recall@10": 0.8333,
+        "mrr": 0.75,
+        "faithfulness": 0.0
+      }
+    },
+    "hybrid": {
+      "hard": {
+        "count": 6,
+        "recall@3": 0.8333,
+        "recall@5": 0.8333,
+        "recall@10": 0.8333,
+        "mrr": 0.6389,
+        "faithfulness": 0.0
+      },
+      "easy": {
+        "count": 8,
+        "recall@3": 0.625,
+        "recall@5": 0.625,
+        "recall@10": 0.625,
+        "mrr": 0.625,
+        "faithfulness": 0.0
+      },
+      "medium": {
+        "count": 6,
+        "recall@3": 0.8333,
+        "recall@5": 0.8333,
+        "recall@10": 0.8333,
+        "mrr": 0.8333,
+        "faithfulness": 0.0
+      }
+    },
+    "hybrid_rerank": {
+      "hard": {
+        "count": 6,
+        "recall@3": 0.6667,
+        "recall@5": 0.6667,
+        "recall@10": 0.6667,
+        "mrr": 0.5833,
+        "faithfulness": 0.8
+      },
+      "easy": {
+        "count": 8,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "faithfulness": 1.0
+      },
+      "medium": {
+        "count": 6,
+        "recall@3": 0.8333,
+        "recall@5": 0.8333,
+        "recall@10": 0.8333,
+        "mrr": 0.8333,
+        "faithfulness": 0.8
+      }
+    }
+  }
+}

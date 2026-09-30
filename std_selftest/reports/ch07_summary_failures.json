@@ -1,0 +1,20 @@
+[
+  {
+    "id": "noise-removal",
+    "summary": "用户询问订单1005何时到。客服正在查询订单1005。用户要求有结果告知。",
+    "missing": [
+      "什么时候到"
+    ],
+    "unsupported": [],
+    "small_talk_leak": [],
+    "length": 37
+  },
+  {
+    "id": "small-talk-only-removed",
+    "summary": "用户向客服表示感谢。",
+    "missing": [],
+    "unsupported": [],
+    "small_talk_leak": [],
+    "length": 10
+  }
+]

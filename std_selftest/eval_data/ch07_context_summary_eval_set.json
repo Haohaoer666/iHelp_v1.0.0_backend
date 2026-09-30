@@ -1,0 +1,106 @@
+[
+  {
+    "id": "order-refund",
+    "span": [
+      {"role": "user", "content": "订单1001的智能手表屏幕裂了，我要退款，已经上传照片了，但是问题还没有解决。"},
+      {"role": "assistant", "content": "已收到订单1001的退款申请，请等待审核。"},
+      {"role": "user", "content": "请帮我确认一下审核结果。"}
+    ],
+    "must_include": ["订单1001", "退款", "屏幕裂", "审核"],
+    "must_not_include": ["订单9999", "已到账"],
+    "small_talk": ["谢谢", "你好"]
+  },
+  {
+    "id": "phone-and-order",
+    "span": [
+      {"role": "user", "content": "我的手机号是13800138000，订单1002的蓝牙耳机还没有发货。"},
+      {"role": "assistant", "content": "已记录联系方式，正在查询订单1002的发货状态。"},
+      {"role": "user", "content": "如果今天还不发，请提醒我。"}
+    ],
+    "must_include": ["13800138000", "订单1002", "发货"],
+    "must_not_include": ["13900139000", "已送达"],
+    "small_talk": ["好吧", "麻烦啦"]
+  },
+  {
+    "id": "exchange-size",
+    "span": [
+      {"role": "user", "content": "订单1003的卫衣买大了，想换小一码，颜色还是黑色。"},
+      {"role": "assistant", "content": "已记录换货诉求，尺码改为小一码，颜色保持黑色。"}
+    ],
+    "must_include": ["订单1003", "换货", "小一码"],
+    "must_not_include": ["退款", "红色"],
+    "small_talk": ["哈哈"]
+  },
+  {
+    "id": "unresolved-logistics",
+    "span": [
+      {"role": "user", "content": "订单1004的显示器物流三天没有更新，我很着急，问题一直没解决。"},
+      {"role": "assistant", "content": "已联系承运商核查订单1004的物流节点。"},
+      {"role": "user", "content": "请今天给我结果。"}
+    ],
+    "must_include": ["订单1004", "物流", "未更新", "今天"],
+    "must_not_include": ["已签收", "订单1005"],
+    "small_talk": ["辛苦了"]
+  },
+  {
+    "id": "noise-removal",
+    "span": [
+      {"role": "user", "content": "你好，谢谢，我想问订单1005什么时候到。"},
+      {"role": "assistant", "content": "您好，正在查询订单1005。"},
+      {"role": "user", "content": "有结果告诉我。"}
+    ],
+    "must_include": ["订单1005", "什么时候到"],
+    "must_not_include": ["天气", "笑话"],
+    "small_talk": ["你好", "谢谢", "您好"]
+  },
+  {
+    "id": "multiple-numbers",
+    "span": [
+      {"role": "user", "content": "订单1006和订单1007都要退款，联系电话是13800138000。"},
+      {"role": "assistant", "content": "已登记两笔退款申请。"}
+    ],
+    "must_include": ["订单1006", "订单1007", "退款"],
+    "must_not_include": ["订单1008"],
+    "small_talk": ["嗯嗯"]
+  },
+  {
+    "id": "ticket-followup",
+    "span": [
+      {"role": "user", "content": "订单1008已经建过工单，但客服还没有回复，我希望今天处理。"},
+      {"role": "assistant", "content": "已记录历史工单和今天的处理诉求。"}
+    ],
+    "must_include": ["订单1008", "工单", "今天"],
+    "must_not_include": ["已完成"],
+    "small_talk": ["谢谢"]
+  },
+  {
+    "id": "product-question",
+    "span": [
+      {"role": "user", "content": "我想确认 iHao V1 显示器是否支持 144Hz，如果支持就想下单。"},
+      {"role": "assistant", "content": "已记录商品和刷新率问题。"}
+    ],
+    "must_include": ["iHao V1", "144Hz", "下单"],
+    "must_not_include": ["iHao X99", "240Hz"],
+    "small_talk": ["哈哈", "谢谢"]
+  },
+  {
+    "id": "refund-not-arrived",
+    "span": [
+      {"role": "user", "content": "订单1009的退款还没有到账，银行卡是尾号1234。"},
+      {"role": "assistant", "content": "已登记退款未到账问题。"}
+    ],
+    "must_include": ["订单1009", "退款", "未到账", "1234"],
+    "must_not_include": ["5678", "已到账"],
+    "small_talk": ["麻烦你"]
+  },
+  {
+    "id": "small-talk-only-removed",
+    "span": [
+      {"role": "user", "content": "你好呀，今天天气不错，谢谢你。"},
+      {"role": "assistant", "content": "您好，很高兴为您服务。"}
+    ],
+    "must_include": [],
+    "must_not_include": ["天气", "你好"],
+    "small_talk": ["你好", "谢谢", "天气"]
+  }
+]

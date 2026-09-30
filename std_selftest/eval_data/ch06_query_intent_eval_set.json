@@ -1,0 +1,148 @@
+[
+  {
+    "id": "logistics-complete",
+    "history": [],
+    "current": "订单 1001 的物流到哪了",
+    "expected_resolved_query": "订单 1001 的物流到哪了",
+    "expected_intent": "物流"
+  },
+  {
+    "id": "logistics-pronoun",
+    "history": [
+      {"role": "user", "content": "订单 1001 的物流到哪了"},
+      {"role": "assistant", "content": "订单 1001 正在运输中。"}
+    ],
+    "current": "它现在到哪了",
+    "expected_resolved_contains": ["1001", "物流"],
+    "expected_intent": "物流"
+  },
+  {
+    "id": "refund-pronoun",
+    "history": [
+      {"role": "user", "content": "订单 1001 已经签收了"},
+      {"role": "assistant", "content": "订单 1001 已签收，可以继续帮您处理售后。"}
+    ],
+    "current": "它能退吗",
+    "expected_resolved_contains": ["1001", "退"],
+    "expected_intent": "退款退货"
+  },
+  {
+    "id": "after-sales-progress",
+    "history": [
+      {"role": "user", "content": "订单 1001 提交了换货"},
+      {"role": "assistant", "content": "订单 1001 的换货申请正在审核。"}
+    ],
+    "current": "到哪一步了",
+    "expected_resolved_contains": ["1001", "换货"],
+    "expected_intent": "售后"
+  },
+  {
+    "id": "refund-policy-complete",
+    "history": [],
+    "current": "退货政策是什么",
+    "expected_resolved_query": "退货政策是什么",
+    "expected_intent": "退款退货"
+  },
+  {
+    "id": "refund-arrival",
+    "history": [],
+    "current": "我的退款为什么还没到",
+    "expected_resolved_query": "我的退款为什么还没到",
+    "expected_intent": "售后"
+  },
+  {
+    "id": "order-status",
+    "history": [],
+    "current": "订单 1001 是什么状态",
+    "expected_resolved_query": "订单 1001 是什么状态",
+    "expected_intent": "订单"
+  },
+  {
+    "id": "logistics-arrival-time",
+    "history": [],
+    "current": "快递什么时候能到",
+    "expected_resolved_query": "快递什么时候能到",
+    "expected_intent": "物流"
+  },
+  {
+    "id": "product-stock",
+    "history": [],
+    "current": "iHao V1 有货吗",
+    "expected_resolved_query": "iHao V1 有货吗",
+    "expected_intent": "商品咨询"
+  },
+  {
+    "id": "complaint",
+    "history": [],
+    "current": "我要投诉快递员",
+    "expected_resolved_query": "我要投诉快递员",
+    "expected_intent": "投诉"
+  },
+  {
+    "id": "chitchat",
+    "history": [],
+    "current": "你好",
+    "expected_resolved_query": "你好",
+    "expected_intent": "闲聊"
+  },
+  {
+    "id": "other-weird",
+    "history": [],
+    "current": "帮我看下那个东西是不是那个意思",
+    "expected_resolved_query": "帮我看下那个东西是不是那个意思",
+    "expected_intent": "其他"
+  },
+  {
+    "id": "back-to-logistics",
+    "history": [
+      {"role": "user", "content": "订单 1001 能退吗"},
+      {"role": "assistant", "content": "订单 1001 可以申请退款。"},
+      {"role": "user", "content": "那先不退了"}
+    ],
+    "current": "又到哪了",
+    "expected_resolved_contains": ["1001", "物流"],
+    "expected_intent": "物流"
+  },
+  {
+    "id": "ambiguous-no-context",
+    "history": [],
+    "current": "这个怎么办",
+    "expected_resolved_query": "这个怎么办",
+    "expected_intent": "其他"
+  },
+  {
+    "id": "refund-policy-with-order",
+    "history": [],
+    "current": "订单 1001 是否支持七天无理由退货",
+    "expected_resolved_query": "订单 1001 是否支持七天无理由退货",
+    "expected_intent": "退款退货"
+  },
+  {
+    "id": "maintenance-progress",
+    "history": [],
+    "current": "维修进度到哪了",
+    "expected_resolved_contains": ["维修", "进度"],
+    "expected_intent": "售后"
+  },
+  {
+    "id": "exchange-size",
+    "history": [],
+    "current": "衣服买大了 我要换",
+    "expected_resolved_query": "衣服买大了 我要换",
+    "expected_intent": "售后"
+  },
+  {
+    "id": "order-not-shipped",
+    "history": [],
+    "current": "订单怎么还没发货",
+    "expected_resolved_query": "订单怎么还没发货",
+    "expected_intent": "订单"
+  },
+  {
+    "id": "chitchat-joke",
+    "history": [],
+    "current": "讲个笑话",
+    "expected_resolved_query": "讲个笑话",
+    "expected_intent": "闲聊"
+  }
+]
